@@ -1,0 +1,18 @@
+# This file is meant to handle the tabs vs. spaces debate.
+# You can find more details here: http://editorconfig.org/
+
+root = true
+
+[*]
+indent_style = space
+indent_size = 4
+charset = utf-8
+end_of_line = lf
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.{yml,js,json,tf}]
+indent_size = 2
+
+[*.md]
+trim_trailing_whitespace = false
