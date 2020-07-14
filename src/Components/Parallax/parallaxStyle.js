@@ -38,6 +38,12 @@ const parallaxStyle = {
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'left',
   },
+  free: {
+    height: 'auto',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'left',
+  },
 }
 
 export default parallaxStyle

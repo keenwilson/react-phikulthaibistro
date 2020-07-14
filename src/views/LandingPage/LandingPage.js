@@ -3,8 +3,6 @@ import { makeStyles } from '@material-ui/core/styles'
 import Container from '@material-ui/core/Container'
 import styles from './landingPageStyle.js'
 import Header from '../../components/Header/Header'
-import GridContainer from '../../components/Grid/GridContainer.js'
-import GridItem from '../../components/Grid/GridItem.js'
 
 import Parallax from '../../components/Parallax/Parallax'
 import HeaderLinks from '../../components/Header/HeaderLinks'

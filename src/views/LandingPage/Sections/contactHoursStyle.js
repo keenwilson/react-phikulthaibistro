@@ -48,18 +48,27 @@ const imagesStyles = {
   },
 }
 
-const exampleStyle = {
+const contactHoursStyle = {
   section: {
-    padding: '70px 0',
+    padding: '70px 25px',
   },
   container: {
     ...containerFluid,
     textAlign: 'center !important',
+    color: '#FFF',
+  },
+  divider: {
+    height: '125px',
   },
   ...imagesStyles,
   link: {
     textDecoration: 'none',
   },
+  icons: {
+    width: '20px',
+    height: '20px',
+    marginRight: '3px',
+  },
 }
 
-export default exampleStyle
+export default contactHoursStyle
