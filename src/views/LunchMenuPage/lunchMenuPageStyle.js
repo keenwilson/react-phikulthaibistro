@@ -74,18 +74,8 @@ const imagesStyles = {
 
 const lunchMenuPageStyle = {
   container,
-  mainContainer: {
-    ...container,
-    display: 'block',
-    padding: 0,
-    margin: 0,
-    textDecoration: 'none',
-    height: `91px`,
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center center',
-    overflow: 'hidden',
-    transform: `translate3d(0px, 40.3333px, 0px)`,
+  divider: {
+    height: '90px',
   },
   profile: {
     textAlign: 'center',
@@ -101,9 +91,15 @@ const lunchMenuPageStyle = {
     maxWidth: '600px',
     color: '#999',
     textAlign: 'center !important',
+    paddingLeft: '25px',
+    paddingRight: '25px',
+  },
+  nameTop: {
+    marginTop: '-80px',
+    paddingBottom: '10px',
   },
   name: {
-    marginTop: '-80px',
+    paddingBottom: '10px',
   },
   ...imagesStyles,
   main: {
@@ -113,7 +109,6 @@ const lunchMenuPageStyle = {
   },
   mainRaised: {
     margin: '-60px 30px 0px',
-
     borderRadius: '6px',
     boxShadow:
       '0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)',
