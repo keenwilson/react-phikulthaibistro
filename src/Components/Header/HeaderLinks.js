@@ -36,15 +36,18 @@ export default function HeaderLinks(props) {
           }}
           buttonIcon={RestaurantMenu}
           dropdownList={[
-            <Link to="/" className={classes.dropdownLink}>
+            <Link to="/lunch-menu-page" className={classes.dropdownLink}>
               Lunch Menu
+            </Link>,
+            <Link to="/dinner-menu-page" className={classes.dropdownLink}>
+              Dinner Menu
             </Link>,
             <a
               href="https://creativetimofficial.github.io/material-kit-react/#/documentation?ref=mkr-navbar"
               target="_blank"
               className={classes.dropdownLink}
             >
-              Dinner Menu
+              New Menu
             </a>,
           ]}
         />
