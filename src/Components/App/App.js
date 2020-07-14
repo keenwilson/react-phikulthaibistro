@@ -7,7 +7,6 @@ function App() {
   return (
     <Container className="App" disableGutters={true}>
       <>
-        <HamburgerMenu />
         <LandingPage />
       </>
     </Container>

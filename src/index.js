@@ -6,12 +6,30 @@ import { ThemeProvider } from '@material-ui/core/styles'
 import App from './components/App/App'
 import theme from './theme'
 import * as serviceWorker from './serviceWorker'
+import { createBrowserHistory } from 'history'
+import { Router, Route, Switch } from 'react-router-dom'
+import LandingPage from './views/LandingPage/LandingPage.js'
+
+var hist = createBrowserHistory()
 
 ReactDOM.render(
   <ThemeProvider theme={theme}>
     {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
     <CssBaseline />
     <App />
+    <Router history={hist}>
+      <Switch>
+        <Route path="/landing-page" component={LandingPage} />
+        <Route
+          path="/user-portal"
+          component={() => {
+            window.location.href = 'https://dt5ht7ijj6y6.cloudfront.net/user/signin'
+            return null
+          }}
+        />
+        <Route component={LandingPage} />
+      </Switch>
+    </Router>
   </ThemeProvider>,
   document.getElementById('root')
 )
