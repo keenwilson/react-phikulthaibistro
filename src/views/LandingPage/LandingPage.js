@@ -9,6 +9,7 @@ import GridItem from '../../components/Grid/GridItem.js'
 import Parallax from '../../components/Parallax/Parallax'
 import HeaderLinks from '../../components/Header/HeaderLinks'
 import SectionThaiComfortFood from './Sections/SectionThaiComfortFood'
+import SectionContactHours from './Sections/SectionContactHours'
 
 const dashboardRoutes = []
 const useStyles = makeStyles(styles)
@@ -39,6 +40,7 @@ export default function LandingPage(props) {
           <div className={classes.container}></div>
         </Parallax>
         <SectionThaiComfortFood />
+        <SectionContactHours />
       </Container>
     </div>
   )
