@@ -5,10 +5,6 @@
         <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
-        <meta
-            name="description"
-            content="Phikul Thai Bistro, a family-owned Thai restaurant in the River Market, Kansas City, Misssouri"
-        />
         <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
         <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -29,6 +25,23 @@
             rel="stylesheet"
         />
         <title>Phikul Thai Bistro</title>
+        <meta
+            id="MetaDescription"
+            name="DESCRIPTION"
+            content="At Phikul Thai Bistro, a family-owned Thai restaurant, we serve the best Thai food, cooked to order with no preservatives from locally grown ingredients alongside vegetarian options in the Kansas City's River Market district."
+        />
+        <meta id="MetaRobots" name="ROBOTS" content="INDEX, FOLLOW" />
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172759592-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || []
+            function gtag() {
+                dataLayer.push(arguments)
+            }
+            gtag('js', new Date())
+
+            gtag('config', 'UA-172759592-1')
+        </script>
     </head>
     <body>
         <noscript>You need to enable JavaScript to run this app.</noscript>
