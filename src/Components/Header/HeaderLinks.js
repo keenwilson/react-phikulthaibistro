@@ -42,13 +42,6 @@ export default function HeaderLinks(props) {
             <Link to="/dinner-menu-page" className={classes.dropdownLink}>
               Dinner Menu
             </Link>,
-            <a
-              href="https://creativetimofficial.github.io/material-kit-react/#/documentation?ref=mkr-navbar"
-              target="_blank"
-              className={classes.dropdownLink}
-            >
-              New Menu
-            </a>,
           ]}
         />
       </ListItem>
