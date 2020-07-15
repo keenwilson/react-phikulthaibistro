@@ -9,6 +9,7 @@ import { createBrowserHistory } from 'history'
 import { Router, Route, Switch } from 'react-router-dom'
 import LandingPage from './views/LandingPage/LandingPage.js'
 import LunchMenuPage from './views/LunchMenuPage/LunchMenuPage.js'
+import DinnerMenuPage from './views/DinnerMenuPage/DinnerMenuPage'
 
 var hist = createBrowserHistory()
 
@@ -20,6 +21,7 @@ ReactDOM.render(
       <Switch>
         <Route path="/landing-page" component={LandingPage} />
         <Route path="/lunch-menu-page" component={LunchMenuPage} />
+        <Route path="/dinner-menu-page" component={DinnerMenuPage} />
         <Route
           path="/user-portal"
           component={() => {
