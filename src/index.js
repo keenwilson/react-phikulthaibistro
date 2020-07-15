@@ -6,7 +6,7 @@ import { ThemeProvider } from '@material-ui/core/styles'
 import theme from './theme'
 import * as serviceWorker from './serviceWorker'
 import { createBrowserHistory } from 'history'
-import { Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import LandingPage from './views/LandingPage/LandingPage.js'
 import LunchMenuPage from './views/LunchMenuPage/LunchMenuPage.js'
 import DinnerMenuPage from './views/DinnerMenuPage/DinnerMenuPage'
@@ -19,16 +19,9 @@ ReactDOM.render(
     <CssBaseline />
     <Router history={hist}>
       <Switch>
-        <Route path="/landing-page" component={LandingPage} />
-        <Route path="/lunch-menu-page" component={LunchMenuPage} />
-        <Route path="/dinner-menu-page" component={DinnerMenuPage} />
-        <Route
-          path="/user-portal"
-          component={() => {
-            window.location.href = 'https://dt5ht7ijj6y6.cloudfront.net/user/signin'
-            return null
-          }}
-        />
+        <Route path="/landing" component={LandingPage} />
+        <Route path="/lunch-menu" component={LunchMenuPage} />
+        <Route path="/dinner-menu" component={DinnerMenuPage} />
         <Route exact path="/" component={LandingPage} />
       </Switch>
     </Router>

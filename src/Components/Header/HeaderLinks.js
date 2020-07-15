@@ -36,10 +36,10 @@ export default function HeaderLinks(props) {
           }}
           buttonIcon={RestaurantMenu}
           dropdownList={[
-            <Link to="/lunch-menu-page" className={classes.dropdownLink}>
+            <Link to="/lunch-menu" className={classes.dropdownLink}>
               Lunch Menu
             </Link>,
-            <Link to="/dinner-menu-page" className={classes.dropdownLink}>
+            <Link to="/dinner-menu" className={classes.dropdownLink}>
               Dinner Menu
             </Link>,
           ]}

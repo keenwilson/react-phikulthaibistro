@@ -1,20 +1,23 @@
 import React from 'react'
+// @material-ui/core components
 import { makeStyles } from '@material-ui/core/styles'
 import Container from '@material-ui/core/Container'
-import styles from './landingPageStyle.js'
+// core components
 import Header from '../../components/Header/Header'
-
 import Parallax from '../../components/Parallax/Parallax'
 import HeaderLinks from '../../components/Header/HeaderLinks'
 import SectionThaiComfortFood from './Sections/SectionThaiComfortFood'
 import SectionContactHours from './Sections/SectionContactHours'
 
-const dashboardRoutes = []
+import styles from './landingPageStyle.js'
 const useStyles = makeStyles(styles)
+
+const dashboardRoutes = []
 
 export default function LandingPage(props) {
   const classes = useStyles()
   const { ...rest } = props
+
   return (
     <div>
       <Container className="App" disableGutters={true}>

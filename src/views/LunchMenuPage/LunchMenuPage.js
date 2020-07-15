@@ -10,9 +10,7 @@ import Parallax from '../../components/Parallax/Parallax'
 import HeaderLinks from '../../components/Header/HeaderLinks'
 import GridContainer from '../../components/Grid/GridContainer'
 import GridItem from '../../components/Grid/GridItem'
-import Button from '../../components/CustomButtons/Button.js'
-
-import styles from './lunchMenuPageStyle.js'
+// restaurant menu data
 import { AppetizersData } from '../../assets/RestaurantMenu/appetizersData'
 import { CurriesData } from '../../assets/RestaurantMenu/curriesData'
 import { FromTheWorkData } from '../../assets/RestaurantMenu/fromTheWokData'
@@ -24,13 +22,13 @@ import { SidesData } from '../../assets/RestaurantMenu/sidesData'
 import { DessertsData } from '../../assets/RestaurantMenu/dessertsData'
 import { DrinksData } from '../../assets/RestaurantMenu/drinksData'
 
+import styles from './lunchMenuPageStyle.js'
 const useStyles = makeStyles(styles)
 
 export default function LunchMenuPage(props) {
   const classes = useStyles()
   const { ...rest } = props
   const imageClasses = classNames(classes.imgRaised, classes.imgRoundedCircle, classes.imgFluid)
-  const navImageClasses = classNames(classes.imgRounded, classes.imgGallery)
 
   let classNameForTop
   if (window.innerWidth >= 768) {

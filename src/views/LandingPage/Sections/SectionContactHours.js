@@ -1,33 +1,37 @@
 import React from 'react'
+// nodejs library that concatenates classes
+import classNames from 'classnames'
 // @material-ui/core components
 import { makeStyles } from '@material-ui/core/styles'
 // @material-ui/icons
 import { Facebook } from '@material-ui/icons'
-
 // core components
+import Button from '../../../components/CustomButtons/Button.js'
 import GridContainer from '../../../components/Grid/GridContainer.js'
 import GridItem from '../../../components/Grid/GridItem.js'
 import Parallax from '../../../components/Parallax/Parallax.js'
 
 import styles from './contactHoursStyle.js'
-import Button from '../../../components/CustomButtons/Button.js'
-
 const useStyles = makeStyles(styles)
 
 export default function SectionContactHours() {
   const classes = useStyles()
+  const navImageClasses = classNames(classes.imgRaised, classes.imgRoundedCircle, classes.imgFooter)
+
+  let dividerTop
+  if (window.innerWidth >= 768) {
+    dividerTop = ''
+  } else {
+    dividerTop = classes.dividerTop
+  }
   return (
     <Parallax free image={'https://i.imgur.com/BIMqIac.png'}>
       <div className={classes.section}>
-        <div className={classes.divider}></div>
         <div className={classes.container}>
           <GridContainer justify="center">
             <GridItem xs={12} sm={12} md={6}>
-              <img
-                src={'https://i.imgur.com/cc8vBet.png'}
-                alt="..."
-                className={classes.imgRaised + ' ' + classes.imgRounded + ' ' + classes.imgFluid}
-              />
+              <div className={dividerTop}></div>
+              <img src={'https://i.imgur.com/cc8vBet.png'} alt="..." className={navImageClasses} />
               <h2>Hours</h2>
               <h3>
                 Tuesday 11 AM-9 PM <br />
@@ -41,11 +45,7 @@ export default function SectionContactHours() {
               <h4>Seating at Phikul Thai Bistro is available on a walk-in basis only.</h4>
             </GridItem>
             <GridItem xs={12} sm={12} md={6}>
-              <img
-                src={'https://i.imgur.com/2TCbH7s.png'}
-                alt="..."
-                className={classes.imgRaised + ' ' + classes.imgRounded + ' ' + classes.imgFluid}
-              />
+              <img src={'https://i.imgur.com/2TCbH7s.png'} alt="..." className={navImageClasses} />
               <h2>Location</h2>
               <h3>
                 We are locating next to the City Market streetcar stop. <br />
