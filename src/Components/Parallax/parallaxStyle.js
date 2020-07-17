@@ -32,6 +32,11 @@ const parallaxStyle = {
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
   },
+  mobile: {
+    height: '50vh',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+  },
   medium: {
     height: '350px',
     backgroundSize: 'cover',

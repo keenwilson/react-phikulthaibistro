@@ -1,7 +1,5 @@
 /*eslint-disable*/
 import React from 'react'
-import DeleteIcon from '@material-ui/icons/Delete'
-import IconButton from '@material-ui/core/IconButton'
 // react components for routing our app without refresh
 import { Link } from 'react-router-dom'
 
@@ -16,9 +14,9 @@ import { RestaurantMenu, MenuBook, Phone, Facebook } from '@material-ui/icons'
 
 // core components
 import CustomDropdown from '../CustomDropdown/CustomDropdown.js'
-import Button from '../CustomButtons/Button.js'
 
 import styles from './headerLinksStyle.js'
+import RegularButton from '../../Components/CustomButtons/RegularButton'
 
 const useStyles = makeStyles(styles)
 
@@ -46,14 +44,14 @@ export default function HeaderLinks(props) {
         />
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Button
+        <RegularButton
           href="tel:+1-123-456-7890"
           color="transparent"
           target="_blank"
           className={classes.navLink}
         >
           <Phone className={classes.icons} /> Call (123) 456-7890
-        </Button>
+        </RegularButton>
       </ListItem>
 
       <ListItem className={classes.listItem}>
@@ -63,14 +61,14 @@ export default function HeaderLinks(props) {
           placement={window.innerWidth > 959 ? 'top' : 'left'}
           classes={{ tooltip: classes.tooltip }}
         >
-          <Button
+          <RegularButton
             color="transparent"
             href="https://www.facebook.com/PhikulThaiBistro?ref=phikulthaibistro"
             target="_blank"
             className={classes.navLink}
           >
             <Facebook className={classes.icons} />
-          </Button>
+          </RegularButton>
         </Tooltip>
       </ListItem>
     </List>

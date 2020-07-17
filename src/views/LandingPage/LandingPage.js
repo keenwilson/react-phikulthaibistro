@@ -3,9 +3,9 @@ import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import Container from '@material-ui/core/Container'
 // core components
-import Header from '../../components/Header/Header'
-import Parallax from '../../components/Parallax/Parallax'
-import HeaderLinks from '../../components/Header/HeaderLinks'
+import Header from '../../Components/Header/Header'
+import HeaderLinks from '../../Components/Header/HeaderLinks'
+import Parallax from '../../Components/Parallax/Parallax'
 import SectionThaiComfortFood from './Sections/SectionThaiComfortFood'
 import SectionContactHours from './Sections/SectionContactHours'
 
@@ -37,7 +37,7 @@ export default function LandingPage(props) {
         <Parallax small image={'https://i.imgur.com/9wlE3w6.png'}>
           <div className={classes.container}></div>
         </Parallax>
-        <Parallax image={'https://i.imgur.com/OoI9Je9.png'}>
+        <Parallax mobile image={'https://i.imgur.com/OoI9Je9.png'}>
           <div className={classes.container}></div>
         </Parallax>
         <SectionThaiComfortFood />

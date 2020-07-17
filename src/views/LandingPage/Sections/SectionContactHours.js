@@ -6,12 +6,12 @@ import { makeStyles } from '@material-ui/core/styles'
 // @material-ui/icons
 import { Facebook } from '@material-ui/icons'
 // core components
-import Button from '../../../components/CustomButtons/Button.js'
-import GridContainer from '../../../components/Grid/GridContainer.js'
-import GridItem from '../../../components/Grid/GridItem.js'
-import Parallax from '../../../components/Parallax/Parallax.js'
+import RegularButton from '../../../Components/CustomButtons/RegularButton'
 
 import styles from './contactHoursStyle.js'
+import GridItem from '../../../Components/Grid/GridItem'
+import GridContainer from '../../../Components/Grid/GridContainer'
+import Parallax from '../../../Components/Parallax/Parallax'
 const useStyles = makeStyles(styles)
 
 export default function SectionContactHours() {
@@ -57,9 +57,9 @@ export default function SectionContactHours() {
                   rel="noopener noreferrer"
                   href="https://goo.gl/maps/7tyySYPeNj9Nbcoh9"
                 >
-                  <Button color="primary" size="lg" simple>
+                  <RegularButton color="primary" size="lg" simple>
                     Get Directions
-                  </Button>
+                  </RegularButton>
                 </a>
                 <br />
                 <a
@@ -68,10 +68,10 @@ export default function SectionContactHours() {
                   rel="noopener noreferrer"
                   href="https://www.facebook.com/phikulthaibistro/"
                 >
-                  <Button color="primary" size="lg" simple>
+                  <RegularButton color="primary" size="lg" simple>
                     Follow our <Facebook className={classes.icons} />
                     for status update
-                  </Button>
+                  </RegularButton>
                 </a>
               </h3>
               {/* <iframe

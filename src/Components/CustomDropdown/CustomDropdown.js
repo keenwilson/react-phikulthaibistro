@@ -16,9 +16,9 @@ import Icon from '@material-ui/core/Icon'
 import Popper from '@material-ui/core/Popper'
 
 // core components
-import Button from '../CustomButtons/Button.js'
 
 import styles from './customDropdownStyle.js'
+import RegularButton from '../../Components/CustomButtons/RegularButton'
 
 const useStyles = makeStyles(styles)
 
@@ -83,7 +83,7 @@ export default function CustomDropdown(props) {
   return (
     <div>
       <div>
-        <Button
+        <RegularButton
           aria-label="Notifications"
           aria-owns={anchorEl ? 'menu-list' : null}
           aria-haspopup="true"
@@ -93,7 +93,7 @@ export default function CustomDropdown(props) {
           {icon}
           {buttonText !== undefined ? buttonText : null}
           {caret ? <b className={caretClasses} /> : null}
-        </Button>
+        </RegularButton>
       </div>
       <Popper
         open={Boolean(anchorEl)}

@@ -5,12 +5,11 @@ import classNames from 'classnames'
 import { makeStyles } from '@material-ui/core/styles'
 import Container from '@material-ui/core/Container'
 // core components
-import Header from '../../components/Header/Header'
-import Parallax from '../../components/Parallax/Parallax'
-import HeaderLinks from '../../components/Header/HeaderLinks'
-import GridContainer from '../../components/Grid/GridContainer'
-import GridItem from '../../components/Grid/GridItem'
-import Button from '../../components/CustomButtons/Button.js'
+import Header from '../../Components/Header/Header'
+import HeaderLinks from '../../Components/Header/HeaderLinks'
+import Parallax from '../../Components/Parallax/Parallax'
+import GridContainer from '../../Components/Grid/GridContainer'
+import GridItem from '../../Components/Grid/GridItem'
 // restaurant menu data
 import { AppetizersData } from '../../assets/RestaurantMenu/appetizersData'
 import { CurriesData } from '../../assets/RestaurantMenu/curriesData'
@@ -18,13 +17,12 @@ import { FromTheWorkData } from '../../assets/RestaurantMenu/fromTheWokData'
 import { SoupsData } from '../../assets/RestaurantMenu/soupsData'
 import { SaladsData } from '../../assets/RestaurantMenu/saladsData'
 import { NoodlesData } from '../../assets/RestaurantMenu/noodlesData'
-import { FriedRiceData } from '../../assets/RestaurantMenu/friedRiceData'
-import { SidesData } from '../../assets/RestaurantMenu/sidesData'
 import { DessertsData } from '../../assets/RestaurantMenu/dessertsData'
 import { DrinksData } from '../../assets/RestaurantMenu/drinksData'
 import { HouseFavoriteData } from '../../assets/RestaurantMenu/houseFavoritesData'
 
 import styles from './dinnerMenuPageStyle.js'
+
 const useStyles = makeStyles(styles)
 
 export default function DinnerMenuPage(props) {

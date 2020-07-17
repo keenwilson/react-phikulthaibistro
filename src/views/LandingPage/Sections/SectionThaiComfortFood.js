@@ -4,11 +4,11 @@ import { makeStyles } from '@material-ui/core/styles'
 // @material-ui/icons
 
 // core components
-import GridContainer from '../../../components/Grid/GridContainer.js'
-import GridItem from '../../../components/Grid/GridItem.js'
-import Parallax from '../../../components/Parallax/Parallax.js'
 
 import styles from './thaiComfortFoodStyle.js'
+import GridContainer from '../../../Components/Grid/GridContainer'
+import GridItem from '../../../Components/Grid/GridItem'
+import Parallax from '../../../Components/Parallax/Parallax'
 
 const useStyles = makeStyles(styles)
 
