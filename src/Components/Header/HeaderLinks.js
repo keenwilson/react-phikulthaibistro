@@ -25,32 +25,18 @@ export default function HeaderLinks(props) {
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
-        <CustomDropdown
-          noLiPadding
-          buttonText="Menu"
-          buttonProps={{
-            className: classes.navLink,
-            color: 'transparent',
-          }}
-          buttonIcon={RestaurantMenu}
-          dropdownList={[
-            <Link to="/lunch-menu" className={classes.dropdownLink}>
-              Lunch Menu
-            </Link>,
-            <Link to="/dinner-menu" className={classes.dropdownLink}>
-              Dinner Menu
-            </Link>,
-          ]}
-        />
+        <RegularButton href="/menu" color="transparent" className={classes.navLink}>
+          <RestaurantMenu className={classes.icons} /> Menu
+        </RegularButton>
       </ListItem>
       <ListItem className={classes.listItem}>
         <RegularButton
-          href="tel:+1-123-456-7890"
+          href="tel:+1-816-894-3993"
           color="transparent"
           target="_blank"
           className={classes.navLink}
         >
-          <Phone className={classes.icons} /> Call (123) 456-7890
+          <Phone className={classes.icons} /> Call (816) 894-3993
         </RegularButton>
       </ListItem>
 

@@ -73,8 +73,9 @@ export default function DinnerMenuPage(props) {
                     {AppetizersData.map((item) => {
                       if (item.price.dinner.length > 0) {
                         return (
-                          <div key={item.name}>
+                          <div className={classes.description} key={item.name}>
                             <h4>{item.name}</h4>
+                            <p>{item.description}</p>
                           </div>
                         )
                       }
@@ -91,8 +92,9 @@ export default function DinnerMenuPage(props) {
                     {HouseFavoriteData.map((item) => {
                       if (item.price.dinner.length > 0) {
                         return (
-                          <div key={item.name}>
+                          <div className={classes.description} key={item.name}>
                             <h4>{item.name}</h4>
+                            <p>{item.description}</p>
                           </div>
                         )
                       }
@@ -110,8 +112,9 @@ export default function DinnerMenuPage(props) {
                     {FromTheWorkData.map((item) => {
                       if (item.price.dinner.length > 0) {
                         return (
-                          <div key={item.name}>
+                          <div className={classes.description} key={item.name}>
                             <h4>{item.name}</h4>
+                            <p>{item.description}</p>
                           </div>
                         )
                       }
@@ -130,8 +133,9 @@ export default function DinnerMenuPage(props) {
                     {SoupsData.map((item) => {
                       if (item.price.dinner.length > 0) {
                         return (
-                          <div key={item.name}>
+                          <div className={classes.description} key={item.name}>
                             <h4>{item.name}</h4>
+                            <p>{item.description}</p>
                           </div>
                         )
                       }
@@ -139,8 +143,9 @@ export default function DinnerMenuPage(props) {
                     {SaladsData.map((item) => {
                       if (item.price.dinner.length > 0) {
                         return (
-                          <div key={item.name}>
+                          <div className={classes.description} key={item.name}>
                             <h4>{item.name}</h4>
+                            <p>{item.description}</p>
                           </div>
                         )
                       }
@@ -157,8 +162,9 @@ export default function DinnerMenuPage(props) {
                     {CurriesData.map((item) => {
                       if (item.price.dinner.length > 0) {
                         return (
-                          <div key={item.name}>
+                          <div className={classes.description} key={item.name}>
                             <h4>{item.name}</h4>
+                            <p>{item.description}</p>
                           </div>
                         )
                       }
@@ -175,8 +181,9 @@ export default function DinnerMenuPage(props) {
                     {NoodlesData.map((item) => {
                       if (item.price.dinner.length > 0) {
                         return (
-                          <div key={item.name}>
+                          <div className={classes.description} key={item.name}>
                             <h4>{item.name}</h4>
+                            <p>{item.description}</p>
                           </div>
                         )
                       }
@@ -194,8 +201,9 @@ export default function DinnerMenuPage(props) {
                     {DessertsData.map((item) => {
                       if (item.price.dinner.length > 0) {
                         return (
-                          <div key={item.name}>
+                          <div className={classes.description} key={item.name}>
                             <h4>{item.name}</h4>
+                            <p>{item.description}</p>
                           </div>
                         )
                       }
@@ -203,8 +211,9 @@ export default function DinnerMenuPage(props) {
                     {DrinksData.map((item) => {
                       if (item.price.dinner.length > 0) {
                         return (
-                          <div key={item.name}>
+                          <div className={classes.description} key={item.name}>
                             <h4>{item.name}</h4>
+                            <p>{item.description}</p>
                           </div>
                         )
                       }

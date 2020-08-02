@@ -50,7 +50,17 @@ export default function SectionContactHours() {
               <h3>
                 We are locating next to the City Market streetcar stop. <br />
                 17 E 5th St, Kansas City, MO 64106 <br />
-                Tel. (123) 456-7890 <br />
+                <a
+                  className={classes.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="tel:+1-816-894-3993"
+                >
+                  <RegularButton color="primary" size="lg" simple>
+                    Tel. (816) 894-3993
+                  </RegularButton>
+                </a>
+                <br />
                 <a
                   className={classes.link}
                   target="_blank"
@@ -74,7 +84,7 @@ export default function SectionContactHours() {
                   </RegularButton>
                 </a>
               </h3>
-              {/* <iframe
+              <iframe
                 title="Phikul Thai Bistro Map"
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12383.663936026447!2d-94.5820843!3d39.1083829!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb8b9d2ccbe30d510!2sPhikul%20Thai%20Bistro!5e0!3m2!1sen!2sus!4v1594751972056!5m2!1sen!2sus"
                 width="400"
@@ -84,7 +94,7 @@ export default function SectionContactHours() {
                 allowfullscreen=""
                 aria-hidden="false"
                 tabindex="0"
-              ></iframe> */}
+              ></iframe>
             </GridItem>
           </GridContainer>
           <div className={classes.divider}>

@@ -21,6 +21,33 @@ const container = {
   },
 }
 
+const navbar = {
+  height: '100px',
+  backgroundColor: '#2c243c',
+}
+const flex = {
+  display: 'flex',
+  flexFlow: 'row wrap',
+  justifyContent: 'space-around',
+  width: '100%',
+  marginTop: '24px',
+  '@media (min-width: 576px)': { marginTop: '24px' },
+}
+const flexItem = {
+  width: '320px',
+  '@media (min-width: 576px)': {
+    width: '100vw',
+  },
+  '@media (min-width: 768px)': {
+    width: '320px',
+  },
+  '@media (min-width: 992px)': {
+    width: '460px',
+  },
+  '@media (min-width: 1200px)': {
+    width: '500px',
+  },
+}
 const title = {
   color: '#3C4858',
   margin: '1.75rem 0 0.875rem',
@@ -72,6 +99,9 @@ const imagesStyles = {
 }
 
 const landingPageStyle = {
+  navbar,
+  flex,
+  flexItem,
   container: {
     zIndex: '12',
     color: '#FFFFFF',

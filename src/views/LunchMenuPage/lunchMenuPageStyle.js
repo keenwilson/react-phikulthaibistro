@@ -8,16 +8,19 @@ const containerFluid = {
 }
 const container = {
   ...containerFluid,
-  '@media (min-width: 576px)': {
+  '@media (max-width: 576px)': {
     maxWidth: '540px',
+    paddingRight: '0px',
+    paddingLeft: '0px',
+    marginBottom: '60px',
   },
-  '@media (min-width: 768px)': {
+  '@media (max-width: 768px)': {
     maxWidth: '720px',
   },
-  '@media (min-width: 992px)': {
+  '@media (max-width: 992px)': {
     maxWidth: '960px',
   },
-  '@media (min-width: 1200px)': {
+  '@media (max-width: 1200px)': {
     maxWidth: '1140px',
   },
 }
@@ -28,6 +31,8 @@ const title = {
   textDecoration: 'none',
   fontWeight: '700',
   fontFamily: `'Roboto', sans-serif`,
+  fontSize: '2em',
+  letterSpacing: '2px',
 }
 
 const imagesStyles = {
@@ -72,6 +77,18 @@ const imagesStyles = {
   },
 }
 
+const mainRaised = {
+  margin: '-60px 30px 0px',
+  '@media (max-width: 576px)': {
+    margin: '-60px 0px 0px',
+    padding: '20px',
+    textAlign: 'left',
+  },
+  borderRadius: '6px',
+  boxShadow:
+    '0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)',
+}
+
 const lunchMenuPageStyle = {
   container,
   divider: {
@@ -89,10 +106,12 @@ const lunchMenuPageStyle = {
   description: {
     margin: '1.071rem auto 0',
     maxWidth: '600px',
-    color: '#999',
-    textAlign: 'center !important',
+    color: '#333',
+    textAlign: 'left',
     paddingLeft: '25px',
     paddingRight: '25px',
+    paddingBottom: '25px',
+    fontSize: '1.2em',
   },
   nameTop: {
     marginTop: '-80px',
@@ -107,12 +126,7 @@ const lunchMenuPageStyle = {
     position: 'relative',
     zIndex: '3',
   },
-  mainRaised: {
-    margin: '-60px 30px 0px',
-    borderRadius: '6px',
-    boxShadow:
-      '0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)',
-  },
+  mainRaised,
   title: {
     ...title,
     display: 'inline-block',
